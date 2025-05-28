@@ -1,0 +1,69 @@
+@import "tailwindcss";
+.Nav-item {
+  border: 5px solid rgb(224, 84, 84);
+}
+.btn {
+  border: 2px solid rgb(46, 35, 35);
+  border-radius: 4px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.btn:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.counter-btn {
+  border: 10px solid rgb(229, 152, 152);
+  background-color: rgb(91, 156, 212);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.count-display {
+  font-size: 10em;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.counter-container {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.counter-btn:hover {
+  background-color: #45010174;
+}
+.boby {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin: 50px;
+  font-size: 3em;
+}
+.color-display {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  transition-property: 0.25s ease;
+}
+.color-display p {
+  color: rgb(68, 71, 72);
+  font-size: 2 rem;
+  text-align: center;
+}
+.label {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
