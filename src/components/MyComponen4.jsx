@@ -9,15 +9,17 @@ function MyComponen4() {
     setFoods((f) => [...f, newFood]);
   }
 
-  function handleRemoveFood(index  ) {
-
+  function handleRemoveFood(index) {
+    setFoods(foods.filter((__, i) => i !== index));
   }
   return (
     <div>
       <h2>List of Food</h2>
       <ul>
         {foods.map((foods, index) => (
-          <li key={index}>{foods}</li>
+          <li key={index} onClick ={()=>handleRemoveFood(index)} >
+            {foods}
+            </li>
         ))}
       </ul>
       <input type="text" id="foodInput" placeholder="Enter food here" />
@@ -29,3 +31,6 @@ function MyComponen4() {
 export default MyComponen4;
 
 //updating a state of an array using react.
+// we've usde the updater function also to update the state of an array.and aslo we've used the filter method to remove the item from the array.
+// we've used the map method to iterate over the array and display the items in the list.
+// we've used the onClick event to remove the item from the array when clicked on it.
