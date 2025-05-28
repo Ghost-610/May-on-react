@@ -8,19 +8,20 @@ import Read from "./components/Read.jsx";
 import Color from "./components/Color.jsx";
 import MyComponontz from "./components/MyComponontz.jsx";
 import MyComponen4 from "./components/MyComponen4.jsx";
+import CarComponent from "./components/CarComponent.jsx";
 function App() {
   return (
     <>
       <Header />
       <Button />
       <Profilepic />
-      <Mycomponent /> 
-       <Counter />
-      <Read /> 
-         <MyComponen4 />
+      <Mycomponent />
+      <Counter />
+      <Read />
+      <MyComponen4 />
+      <CarComponent />
       <Color />
-      {/* <MyComponontz /> */}
-   
+      <MyComponontz />
     </>
   );
 }
